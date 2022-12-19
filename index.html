@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div id="tasks-container">
+
+        <div id="tasks-header">
+            <h2 class="title-todo">To Do List</h2>
+            <form id="add-task-form">
+                <input type="text" class="task-title" placeholder="Digite a sua tarefa...">
+                <button type="submit" id="add-btn">
+                    <span>Adicionar Tarefa</span>
+                </button>
+            </form>
+        </div>
+
+        <div id="tasks-list-container">
+
+            <div id="added-task">
+                <div class="div-task-title-task"><span id="result-content">Testando toDoList</span></div>
+                <div class="icons-done-remove">
+                    <ion-icon id="done-btn" name="checkmark-outline"></ion-icon>
+                    <ion-icon id="remove-btn" name="close-outline"></ion-icon>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+    <!--instalação para utilizar os ícones de add, done e remove-->   
+    <script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" > </script> 
+    <script  nomodule  src = "https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js" > </script>
+
+</body>
+</html>

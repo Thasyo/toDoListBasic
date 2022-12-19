@@ -1,0 +1,165 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+}
+
+body{
+    height: 700px;
+    background-color: #000000e4;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#tasks-container{
+    width: 60%;
+    height: 70%;
+
+    background-color: #272727;
+
+    /*Centralizando div principal no meio do body, tanto verticalmente como horizontalmente.*/
+    display: inline-block;
+    justify-content: center;
+    align-self: center;
+
+    margin: 20px;
+    padding: 10px;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px 2px #0099ff25;
+}
+
+.title-todo{
+    font-family: fantasy, Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #0099ffbe;
+
+    margin: 20px;
+    padding: 10px;
+
+    border-bottom: solid 1px #0099ffbe;
+    text-shadow: 0px 0px 10px;
+    border-radius: 5px;
+}
+
+#add-task-form{
+    margin: 20px;
+}
+
+.task-title{
+    width: 100%;
+
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+
+    background-color: #0099ff23;
+    color: #ffff;
+}
+
+.task-title::placeholder{
+    color: #ffffff82;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.task-title:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+#add-btn{
+    width: 100%;
+
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+
+    background-color: #0099ffbe;
+    color: #ffff;
+    
+    font-size: 14px;
+    font-weight: 900;
+
+}
+
+#add-btn span{
+    width: 50%;
+}
+
+#add-btn:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: transform 0.5s;
+}
+
+#tasks-list-container{
+
+    margin: 20px;
+    padding: 10px;
+
+    border-top: solid 1px #0099ffbe;
+    border-radius: 5px;
+
+}
+
+#added-task{
+
+    margin-top: 10px;
+    padding: 10px;
+
+    width: 100%;
+    background-color: #0099ff23;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 50px 2px #0099ff25;
+
+    color: #ffff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#done-btn{
+    padding: 8px;
+}
+
+#done-btn:hover{
+    background-color: #b4fc48ca;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#remove-btn{
+    padding: 8px;
+}
+
+#remove-btn:hover{
+    background-color: #ff0000c5;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#added-task.hide{ /*Adicionar na div com id:added-task*/
+    display: none;
+}
+
+#result-content.done{ /*Adicionar no span com id:result-content*/
+    text-decoration: line-through;
+}
+
+
