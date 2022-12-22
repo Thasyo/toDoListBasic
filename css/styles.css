@@ -127,22 +127,22 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 
-#done-btn{
+.done-btn{
     padding: 8px;
 }
 
-#done-btn:hover{
+.done-btn:hover{
     background-color: #b4fc48ca;
     transition: 0.5s;
     cursor: pointer;
     border-radius: 5px;
 }
 
-#remove-btn{
+.remove-btn{
     padding: 8px;
 }
 
-#remove-btn:hover{
+.remove-btn:hover{
     background-color: #ff0000c5;
     transition: 0.5s;
     cursor: pointer;

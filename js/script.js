@@ -24,6 +24,12 @@ const addTask = () => {
         const tasksListContainer = document.querySelector("#tasks-list-container");
         tasksListContainer.appendChild(newTask);
 
+        //Adicionando evento de remoção de tarefas.
+        const removeBtn = newTask.querySelector(".remove-btn");
+        removeBtn.addEventListener("click", () => {
+            removeTask(removeBtn);
+        });
+
         //limpando input após adicionar tarefa.
         document.querySelector(".task-title").value = ""; 
 
@@ -31,10 +37,13 @@ const addTask = () => {
         alert("Preencha o campo vazio.");
     };
 
-
-
 }
 //função para remover tarefas.
+const removeTask = (removeBtn) => {
+    const fatherBtn = removeBtn.parentNode;
+    const removeNewTask = fatherBtn.parentNode;
+    removeNewTask.remove();
+};
 
 //função para finalizar e "desfinalizar" tarefas.
 
