@@ -149,7 +149,7 @@ body{
     border-radius: 5px;
 }
 
-#result-content.done{ /*Adicionar no span com id:result-content*/
+.done{ /*Adicionar no span com id:result-content*/
     text-decoration: line-through;
     color: #000000d2;
 }
